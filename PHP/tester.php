@@ -61,11 +61,4 @@
 			return $result;
 		}
 	}
-	$result=RedditTester::checkUser('test','12345678-90AB-CDEF-0000-A6F3D97A08FF',$errno,$errstr);
-	if($errno===0){
-		print_r(json_decode($result));
-	}
-	else{
-		echo "Error $errno: $errstr";
-	}
 ?>
